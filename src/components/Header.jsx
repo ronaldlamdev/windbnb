@@ -6,13 +6,16 @@ const Header = () => {
   return (
     <header>
       <img src={Logo} alt='logo' />
-      <div>
+      <div className='flex rounded-md justify-center items-center shadow-[0_1_6_0_#0000001]'>
         <div>Location</div>
         <div>Add guests</div>
         <div>
           <AiOutlineSearch />
         </div>
       </div>
+
+      {/* Search menu */}
+      <div className='absolute'></div>
     </header>
   )
 }
