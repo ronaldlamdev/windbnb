@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from '../assets/images/logo.svg'
-import {AiOutlineSearch} from 'react-icons/ai'
+import {AiOutlineSearch, AiOutlineClose} from 'react-icons/ai'
 
 const Header = () => {
   return (
@@ -14,8 +14,17 @@ const Header = () => {
         </div>
       </div>
 
+      {/* Search menu background */}
+      <div className='absolute bottom-0 left-0 w-full h-[20vh] bg-black/60'></div>
+      
       {/* Search menu */}
-      <div className='absolute'></div>
+      <div className='absolute top-0 left-0 w-full h-[80vh] bg-white'>
+        <div className='flex w-full justify-between items-center'>
+          <h1>Edit your search</h1>
+          <AiOutlineClose />
+        </div>
+        
+      </div>
     </header>
   )
 }
