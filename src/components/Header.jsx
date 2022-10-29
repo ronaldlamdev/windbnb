@@ -32,9 +32,9 @@ const Header = () => {
         <div className='flex flex-col items-center'>
 
           {/* Heading and close icon */}
-          <div className='flex w-full justify-between items-center'>
-            <h1>Edit your search</h1>
-            <AiOutlineClose />
+          <div className='flex w-full justify-between items-center p-5'>
+            <h1 className='font-["Mulish"] font-bold'>Edit your search</h1>
+            <AiOutlineClose className='text-[#333333] text-xl' />
           </div>
 
           {/* Inputs */}
