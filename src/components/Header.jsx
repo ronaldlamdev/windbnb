@@ -38,17 +38,17 @@ const Header = () => {
           </div>
 
           {/* Inputs */}
-          <div>
-            <div>
-              <div>Location</div>
-              <div>Location</div>
+          <div className='shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] rounded-2xl w-[351px] h-[113px]'>
+            <div className='border-b-[1px] w-full'>
+              <span className='font-["Mulish"] text-sm pt-3 text-[#333333] font-extrabold'>Location</span>
+              <div className='text-[#BDBDBD]'>Select Location</div>
             </div>
             <div>
-              <div>Guests</div>
-              <div>Add Guests</div>
+              <span className='font-["Mulish"] text-sm pt-3 text-[#333333] font-extrabold'>Guests</span>
+              <div className='text-[#BDBDBD]'>Add Guests</div>
             </div>
 
-              {/* Locations */}
+            {/* Locations */}
             <ul>
               <li>
                 <MdLocationPin /> Helsinki, Finland
