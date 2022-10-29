@@ -25,48 +25,53 @@ const Header = () => {
       </div>
 
       {/* Search menu background */}
-      <div className='absolute bottom-0 left-0 w-full h-[20vh] bg-black/60'></div>
+      <div className={menu ? 'absolute hidden bottom-0 left-0 w-full h-[20vh] bg-black/60' : 'absolute bottom-0 left-0 w-full h-[20vh] bg-black/60'}></div>
       
       {/* Search menu */}
       <div className='absolute top-0 left-0 w-full h-[80vh] bg-white shadow-md'>
-        <div className='flex flex-col items-center'>
+        <div className='flex flex-col items-center h-full'>
 
           {/* Heading and close icon */}
           <div className='flex w-full justify-between items-center p-5'>
             <h1 className='font-["Mulish"] font-bold'>Edit your search</h1>
-            <AiOutlineClose className='text-[#333333] text-xl' />
+            <AiOutlineClose onClick={handleMenu} className='text-[#333333] text-xl' />
           </div>
 
-          {/* Inputs */}
-          <div className='shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] rounded-2xl w-[351px] h-[113px]'>
-            <div className='border-b-[1px] w-full'>
-              <span className='font-["Mulish"] text-sm pt-3 text-[#333333] font-extrabold'>Location</span>
-              <div className='text-[#BDBDBD]'>Select Location</div>
-            </div>
-            <div>
-              <span className='font-["Mulish"] text-sm pt-3 text-[#333333] font-extrabold'>Guests</span>
-              <div className='text-[#BDBDBD]'>Add Guests</div>
+          <div className='flex flex-col h-full justify-between'>
+            <div className='flex flex-col'>
+              
+              {/* Inputs */}
+              <div className='shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] rounded-2xl w-[351px] h-[113px]'>
+                <div className='border-b-[1px]'>
+                  <span className='font-["Mulish"] pl-6 text-sm text-[#333333] font-extrabold'>Location</span>
+                  <div className='text-[#BDBDBD] font-["Mulish"] pl-6 pb-1'>Select Location</div>
+                </div>
+                <div className=''>
+                  <span className='font-["Mulish"] text-sm pl-6 pt-3 text-[#333333] font-extrabold'>Guests</span>
+                  <div className='text-[#BDBDBD] font-["Mulish"] pl-6'>Add Guests</div>
+                </div>
+              </div>
+
+              {/* Locations */}
+              <ul>
+                <li>
+                  <MdLocationPin /> Helsinki, Finland
+                </li>
+                <li>
+                  <MdLocationPin /> Turku, Finland
+                </li>
+                <li>
+                  <MdLocationPin /> Oulu, Finland
+                </li>
+                <li>
+                  <MdLocationPin /> Vaasa, Finland
+                </li>
+              </ul>
             </div>
 
-            {/* Locations */}
-            <ul>
-              <li>
-                <MdLocationPin /> Helsinki, Finland
-              </li>
-              <li>
-                <MdLocationPin /> Turku, Finland
-              </li>
-              <li>
-                <MdLocationPin /> Oulu, Finland
-              </li>
-              <li>
-                <MdLocationPin /> Vaasa, Finland
-              </li>
-            </ul>
+            {/* Search button */}
+            <button><AiOutlineSearch /> Search</button>
           </div>
-
-          {/* Search button */}
-          <button><AiOutlineSearch /> Search</button>
 
         </div>
       </div>
