@@ -34,7 +34,7 @@ const Header = () => {
           {/* Heading and close icon */}
           <div className='flex w-full justify-between items-center p-5'>
             <h1 className='font-["Mulish"] font-bold'>Edit your search</h1>
-            <AiOutlineClose onClick={handleMenu} className='text-[#333333] text-xl' />
+            <AiOutlineClose onClick={handleMenu} className='text-[#333333] text-xl hover:opacity-70 duration-500 cursor-pointer' />
           </div>
 
           <div className='flex flex-col h-full justify-between'>
@@ -54,16 +54,16 @@ const Header = () => {
 
               {/* Locations */}
               <ul className='px-6 py-9'>
-                <li className='flex items-center cursor-pointer text-[#4F4F4F] font-medium'>
+                <li className='flex items-center cursor-pointer text-[#4F4F4F] font-medium hover:text-[#828282] hover:underline hover:underline-offset-2 duration-500'>
                   <MdLocationPin className='mr-2' /> Helsinki, Finland
                 </li>
-                <li className='flex items-center pt-9 cursor-pointer text-[#4F4F4F] font-medium'>
+                <li className='flex items-center pt-9 cursor-pointer text-[#4F4F4F] font-medium hover:text-[#828282] hover:underline hover:underline-offset-2 duration-500'>
                   <MdLocationPin className='mr-2' /> Turku, Finland
                 </li>
-                <li className='flex items-center py-9 cursor-pointer text-[#4F4F4F] font-medium'>
+                <li className='flex items-center py-9 cursor-pointer text-[#4F4F4F] font-medium hover:text-[#828282] hover:underline hover:underline-offset-2 duration-500'>
                   <MdLocationPin className='mr-2' /> Oulu, Finland
                 </li>
-                <li className='flex items-center cursor-pointer text-[#4F4F4F] font-medium'>
+                <li className='flex items-center cursor-pointer text-[#4F4F4F] font-medium hover:text-[#828282] hover:underline hover:underline-offset-2 duration-500'>
                   <MdLocationPin className='mr-2' /> Vaasa, Finland
                 </li>
               </ul>
