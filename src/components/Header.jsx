@@ -41,30 +41,30 @@ const Header = () => {
             <div className='flex flex-col'>
               
               {/* Inputs */}
-              <div className='shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] rounded-2xl w-[351px] h-[113px]'>
-                <div className='border-b-[1px]'>
+              <div className='shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] rounded-2xl w-[351px] h-[112px]'>
+                <div className='border-b-[1px] h-[56px]'>
                   <span className='font-["Mulish"] pl-6 text-sm text-[#333333] font-extrabold'>Location</span>
                   <div className='text-[#BDBDBD] font-["Mulish"] pl-6 pb-1'>Select Location</div>
                 </div>
-                <div className=''>
-                  <span className='font-["Mulish"] text-sm pl-6 pt-3 text-[#333333] font-extrabold'>Guests</span>
-                  <div className='text-[#BDBDBD] font-["Mulish"] pl-6'>Add Guests</div>
+                <div className='h-[56px]'>
+                  <span className='font-["Mulish"] text-sm pl-6 text-[#333333] font-extrabold'>Guests</span>
+                  <div className='text-[#BDBDBD] font-["Mulish"] pl-6 pb-1'>Add Guests</div>
                 </div>
               </div>
 
               {/* Locations */}
-              <ul>
-                <li>
-                  <MdLocationPin /> Helsinki, Finland
+              <ul className='px-6 py-9'>
+                <li className='flex items-center text-[#4F4F4F] font-medium'>
+                  <MdLocationPin className='mr-2' /> Helsinki, Finland
                 </li>
-                <li>
-                  <MdLocationPin /> Turku, Finland
+                <li className='flex items-center text-[#4F4F4F] font-medium'>
+                  <MdLocationPin className='mr-2' /> Turku, Finland
                 </li>
-                <li>
-                  <MdLocationPin /> Oulu, Finland
+                <li className='flex items-center text-[#4F4F4F] font-medium'>
+                  <MdLocationPin className='mr-2' /> Oulu, Finland
                 </li>
-                <li>
-                  <MdLocationPin /> Vaasa, Finland
+                <li className='flex items-center text-[#4F4F4F] font-medium'>
+                  <MdLocationPin className='mr-2' /> Vaasa, Finland
                 </li>
               </ul>
             </div>
