@@ -54,23 +54,23 @@ const Header = () => {
 
               {/* Locations */}
               <ul className='px-6 py-9'>
-                <li className='flex items-center text-[#4F4F4F] font-medium'>
+                <li className='flex items-center cursor-pointer text-[#4F4F4F] font-medium'>
                   <MdLocationPin className='mr-2' /> Helsinki, Finland
                 </li>
-                <li className='flex items-center text-[#4F4F4F] font-medium'>
+                <li className='flex items-center pt-9 cursor-pointer text-[#4F4F4F] font-medium'>
                   <MdLocationPin className='mr-2' /> Turku, Finland
                 </li>
-                <li className='flex items-center text-[#4F4F4F] font-medium'>
+                <li className='flex items-center py-9 cursor-pointer text-[#4F4F4F] font-medium'>
                   <MdLocationPin className='mr-2' /> Oulu, Finland
                 </li>
-                <li className='flex items-center text-[#4F4F4F] font-medium'>
+                <li className='flex items-center cursor-pointer text-[#4F4F4F] font-medium'>
                   <MdLocationPin className='mr-2' /> Vaasa, Finland
                 </li>
               </ul>
             </div>
 
             {/* Search button */}
-            <button className='flex font-medium justify-center rounded-2xl gap-1 mb-6 text-white self-center bg-[#EB5757E5] items-center w-[126px] h-12'><AiOutlineSearch className='text-xl'/> Search</button>
+            <button className='flex font-medium justify-center rounded-2xl gap-1 mb-6 text-white self-center bg-[#EB5757E5] items-center w-[126px] hover:opacity-70 duration-500 h-12'><AiOutlineSearch className='text-xl'/> Search</button>
           </div>
 
         </div>
