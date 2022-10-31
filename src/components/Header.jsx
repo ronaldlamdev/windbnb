@@ -7,15 +7,11 @@ import Guests from './Guests'
 const Header = () => {
 
   const [menu, setMenu] = useState(false);
-  const [list, setList] = useState(false);
+  const [list, setList] = useState(<Locations />);
 
   const handleMenu = () => {
     setMenu(!menu);
   };
-
-  const swapInputList = () => {
-    setList(!list);
-  }
 
   return (
     <header className='flex flex-col items-center gap-5'>
@@ -48,18 +44,22 @@ const Header = () => {
               
               {/* Inputs */}
               <div className='shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] rounded-2xl w-[351px] h-[112px]'>
-                <div className='border-b-[1px] h-[56px] cursor-pointer'>
+
+                {/* Location Input */}
+                <div onClick={() => setList(<Locations />)} className='border-b-[1px] h-[56px] cursor-pointer'>
                   <span className='font-["Mulish"] pl-6 text-sm text-[#333333] font-extrabold'>Location</span>
                   <div className='text-[#BDBDBD] font-["Mulish"] pl-6 pb-1'>Select Location</div>
                 </div>
-                <div className='h-[56px] cursor-pointer'>
+
+                {/* Guests Input */}
+                <div onClick={() => setList(<Guests />)} className='h-[56px] cursor-pointer'>
                   <span className='font-["Mulish"] text-sm pl-6 text-[#333333] font-extrabold'>Guests</span>
                   <div className='text-[#BDBDBD] font-["Mulish"] pl-6 pb-1'>Add Guests</div>
                 </div>
               </div>
 
               {/* Locations or Guests */}
-              <Guests />
+              {list}
             </div>
 
             {/* Search button */}
