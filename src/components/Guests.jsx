@@ -39,9 +39,9 @@ const Guests = () => {
         <h1 className='text-[#333] font-bold'>Adults</h1>
         <span className='text-[#BDBDBD]'>Ages 13 or above</span>
         <div className='flex items-center mt-2'>
-          <button onClick={MinusAdultCount} className=''><FiMinusSquare className='w-6 h-6' /></button>
+          <button onClick={MinusAdultCount}><FiMinusSquare className='w-6 h-6 hover:text-[#EB5757E5] duration-500' /></button>
           <span className='px-4'>{adults}</span>
-          <button onClick={PlusAdultCount} className=''><FiPlusSquare className='w-6 h-6' /></button>
+          <button onClick={PlusAdultCount}><FiPlusSquare className='w-6 h-6 hover:text-[#EB5757E5] duration-500' /></button>
         </div>
       </div>
 
@@ -50,9 +50,9 @@ const Guests = () => {
         <h1 className='text-[#333] font-bold'>Children</h1>
         <span className='text-[#BDBDBD]'>Ages 2 - 12</span>
         <div className='flex items-center mt-2'>
-          <button onClick={MinusChildrenCount} className=''><FiMinusSquare className='w-6 h-6' /></button>
+          <button onClick={MinusChildrenCount}><FiMinusSquare className='w-6 h-6 hover:text-[#EB5757E5] duration-500' /></button>
           <span className='px-4'>{children}</span>
-          <button onClick={PlusChildrenCount} className=''><FiPlusSquare className='w-6 h-6' /></button>
+          <button onClick={PlusChildrenCount}><FiPlusSquare className='w-6 h-6 hover:text-[#EB5757E5] duration-500' /></button>
         </div>
       </div>
     </div>
