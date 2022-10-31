@@ -7,27 +7,27 @@ const Guests = () => {
   const [children, setChildren] = useState(0);
 
   return (
-    <div className='px-6 py-9'>
+    <div className='px-6 py-9 font-["Mulish"]'>
 
       {/* Adults */}
-      <div>
-        <h1>Adults</h1>
-        <span>Ages 13 or above</span>
-        <div>
-          <button><FiMinusSquare /></button>
-          <span>{adults}</span>
-          <button><FiPlusSquare /></button>
+      <div className='mb-[3.25rem]'>
+        <h1 className='text-[#333] font-bold'>Adults</h1>
+        <span className='text-[#BDBDBD]'>Ages 13 or above</span>
+        <div className='flex items-center mt-2'>
+          <button className=''><FiMinusSquare className='w-6 h-6' /></button>
+          <span className='px-4'>{adults}</span>
+          <button className=''><FiPlusSquare className='w-6 h-6' /></button>
         </div>
       </div>
 
       {/* Children */}
       <div>
-        <h1>Children</h1>
-        <span>Ages 2 - 12</span>
-        <div>
-          <button><FiMinusSquare /></button>
-          <span>{children}</span>
-          <button><FiPlusSquare /></button>
+        <h1 className='text-[#333] font-bold'>Children</h1>
+        <span className='text-[#BDBDBD]'>Ages 2 - 12</span>
+        <div className='flex items-center mt-2'>
+          <button className=''><FiMinusSquare className='w-6 h-6' /></button>
+          <span className='px-4'>{children}</span>
+          <button className=''><FiPlusSquare className='w-6 h-6' /></button>
         </div>
       </div>
     </div>
