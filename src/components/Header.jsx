@@ -43,7 +43,7 @@ const Header = () => {
             <div className='flex flex-col'>
               
               {/* Inputs */}
-              <div className='shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] rounded-2xl w-[351px] h-[112px]'>
+              <div className='shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] rounded-2xl w-[351px] min-[481px]:w-[440px] md:w-[660px] lg:w-[950px] xl:w-[1150px] h-[112px]'>
 
                 {/* Location Input */}
                 <div onClick={() => setList(<Locations />)} className='border-b-[1px] h-[56px] cursor-pointer'>
