@@ -14,14 +14,14 @@ const Header = () => {
   };
 
   return (
-    <header className='flex flex-col items-center gap-5'>
-      <a className='self-start' href='/'>
+    <header className='flex flex-col items-center gap-5 lg:justify-between lg:flex-row lg:px-24'>
+      <a className='self-start lg:self-center' href='/'>
         <img src={Logo} alt='logo'/>
       </a>
-      <div onClick={handleMenu} className='flex shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] rounded-2xl justify-center items-center h-[55px] w-[297px]'>
-        <div className='w-[138px] text-[#BDBDBD] font-["Mulish"] text-sm text-center'>Location</div>
-        <div className='w-[106px] text-[#BDBDBD] font-["Mulish"] text-sm h-full flex justify-center items-center border-x-[1px]'>Add guests</div>
-        <div className='w-[53px] flex justify-center items-center text-[#EB5757E5] text-xl'>
+      <div onClick={handleMenu} className='flex shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] rounded-2xl justify-center items-center h-[55px] w-[297px] min-[481px]:w-[460px] md:w-[680px] lg:w-[297px]'>
+        <div className='w-[138px] min-[481px]:w-[200px] md:w-[280px] lg:w-[138px] text-[#BDBDBD] font-["Mulish"] text-sm text-center'>Location</div>
+        <div className='w-[106px] min-[481px]:w-[200px] md:w-[280px] lg:w-[106px] text-[#BDBDBD] font-["Mulish"] text-sm h-full flex justify-center items-center border-x-[1px]'>Add guests</div>
+        <div className='w-[53px] min-[481px]:w-[60px] md:w-[120px] lg:w-[53px] flex justify-center items-center text-[#EB5757E5] text-xl'>
           <AiOutlineSearch />
         </div>
       </div>
