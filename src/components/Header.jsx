@@ -43,16 +43,16 @@ const Header = () => {
             <div className='flex flex-col'>
               
               {/* Inputs */}
-              <div className='shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] rounded-2xl w-[351px] min-[481px]:w-[440px] md:w-[660px] lg:w-[950px] xl:w-[1150px] h-[112px]'>
+              <div className='flex flex-col md:flex-row'>
 
                 {/* Location Input */}
-                <div onClick={() => setList(<Locations />)} className='border-b-[1px] h-[56px] cursor-pointer'>
+                <div onClick={() => setList(<Locations />)} className='border-b-[1px] h-[56px] cursor-pointer w-[351px] min-[481px]:w-[440px] min-[700px]:w-[660px] md:w-[300px] shadow-[0px_-1px_6px_0px_rgba(0,0,0,.1)] md:shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] rounded-t-2xl md:rounded-bl-2xl md:rounded-tr-none md:border-b-0 md:border-r-[1px]'>
                   <span className='font-["Mulish"] pl-6 text-sm text-[#333333] font-extrabold'>Location</span>
                   <div className='text-[#BDBDBD] font-["Mulish"] pl-6 pb-1'>Select Location</div>
                 </div>
 
                 {/* Guests Input */}
-                <div onClick={() => setList(<Guests />)} className='h-[56px] cursor-pointer'>
+                <div onClick={() => setList(<Guests />)} className='h-[56px] cursor-pointer w-[351px] min-[481px]:w-[440px] min-[700px]:w-[660px] md:w-[300px] shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] rounded-b-2xl md:rounded-bl-none md:rounded-br-none'>
                   <span className='font-["Mulish"] text-sm pl-6 text-[#333333] font-extrabold'>Guests</span>
                   <div className='text-[#BDBDBD] font-["Mulish"] pl-6 pb-1'>Add Guests</div>
                 </div>
