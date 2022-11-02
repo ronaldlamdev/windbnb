@@ -46,15 +46,19 @@ const Header = () => {
               <div className='flex flex-col md:flex-row'>
 
                 {/* Location Input */}
-                <div onClick={() => setList(<Locations />)} className='border-b-[1px] h-[56px] cursor-pointer w-[351px] min-[481px]:w-[440px] min-[700px]:w-[660px] md:w-[300px] shadow-[0px_-1px_6px_0px_rgba(0,0,0,.1)] md:shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] rounded-t-2xl md:rounded-bl-2xl md:rounded-tr-none md:border-b-0 md:border-r-[1px]'>
+                <div onClick={() => setList(<Locations />)} className='border-b-[1px] h-[56px] cursor-pointer w-[351px] min-[481px]:w-[440px] min-[700px]:w-[660px] md:w-[200px] shadow-[0px_-1px_6px_0px_rgba(0,0,0,.1)] md:shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] rounded-t-2xl md:rounded-bl-2xl md:rounded-tr-none md:border-b-0 md:border-r-[1px]'>
                   <span className='font-["Mulish"] pl-6 text-sm text-[#333333] font-extrabold'>Location</span>
                   <div className='text-[#BDBDBD] font-["Mulish"] pl-6 pb-1'>Select Location</div>
                 </div>
 
                 {/* Guests Input */}
-                <div onClick={() => setList(<Guests />)} className='h-[56px] cursor-pointer w-[351px] min-[481px]:w-[440px] min-[700px]:w-[660px] md:w-[300px] shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] rounded-b-2xl md:rounded-bl-none md:rounded-br-none'>
+                <div onClick={() => setList(<Guests />)} className='h-[56px] cursor-pointer w-[351px] min-[481px]:w-[440px] min-[700px]:w-[660px] md:w-[200px] shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] rounded-b-2xl md:rounded-bl-none md:rounded-br-none'>
                   <span className='font-["Mulish"] text-sm pl-6 text-[#333333] font-extrabold'>Guests</span>
                   <div className='text-[#BDBDBD] font-["Mulish"] pl-6 pb-1'>Add Guests</div>
+                </div>
+
+                <div className='hidden md:block w-[200px] h-[56px] shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] border-l-[1px]'>
+                  <button className='flex font-medium justify-center mx-auto rounded-2xl gap-1 mb-6 text-white bg-[#EB5757E5] items-center w-[126px] hover:opacity-70 duration-500 h-[56px]'><AiOutlineSearch className='text-xl'/> Search</button>
                 </div>
               </div>
 
@@ -63,7 +67,7 @@ const Header = () => {
             </div>
 
             {/* Search button */}
-            <button className='flex font-medium justify-center rounded-2xl gap-1 mb-6 text-white self-center bg-[#EB5757E5] items-center w-[126px] hover:opacity-70 duration-500 h-12'><AiOutlineSearch className='text-xl'/> Search</button>
+            <button className='flex md:hidden font-medium justify-center rounded-2xl gap-1 mb-6 text-white self-center bg-[#EB5757E5] items-center w-[126px] hover:opacity-70 duration-500 h-12'><AiOutlineSearch className='text-xl'/> Search</button>
           </div>
 
         </div>
