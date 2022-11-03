@@ -24,7 +24,7 @@ const Guests = () => {
   };
 
   return (
-    <div className='px-6 py-9 font-["Mulish"] md:px-56'>
+    <div className='px-6 py-9 font-["Mulish"] md:px-56 lg:px-80 xl:px-[27.5rem]'>
 
       {/* Adults */}
       <div className='mb-[3.25rem]'>

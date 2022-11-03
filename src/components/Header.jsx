@@ -27,15 +27,15 @@ const Header = () => {
       </div>
 
       {/* Search menu background */}
-      <div className={menu ? 'absolute bottom-0 left-0 w-full h-[20vh] bg-black/60' : 'absolute hidden bottom-0 left-0 w-full h-[20vh] bg-black/60'}></div>
+      <div className={menu ? 'absolute bottom-0 left-0 w-full h-[20vh] md:h-[50vh] bg-black/60' : 'absolute hidden bottom-0 left-0 w-full h-[20vh] bg-black/60'}></div>
       
       {/* Search menu */}
-      <div className={menu ? 'absolute top-0 left-0 w-full h-[80vh] bg-white shadow-md' : 'absolute top-[-100%] duration-500 left-0 w-full h-[80vh] bg-white shadow-md'}>
+      <div className={menu ? 'absolute top-0 left-0 w-full h-[80vh] md:h-[50vh] bg-white shadow-md' : 'absolute top-[-100%] duration-500 left-0 w-full h-[80vh] bg-white shadow-md'}>
         <div className='flex flex-col items-center h-full'>
 
           {/* Heading and close icon */}
-          <div className='flex w-full justify-between items-center p-5'>
-            <h1 className='font-["Mulish"] font-bold'>Edit your search</h1>
+          <div className='flex w-full justify-between md:justify-end items-center p-5'>
+            <h1 className='font-["Mulish"] font-bold md:hidden'>Edit your search</h1>
             <AiOutlineClose onClick={handleMenu} className='text-[#333333] text-xl hover:opacity-70 duration-500 cursor-pointer' />
           </div>
 
@@ -46,18 +46,18 @@ const Header = () => {
               <div className='flex flex-col md:flex-row'>
 
                 {/* Location Input */}
-                <div onClick={() => setList(<Locations />)} className='border-b-[1px] h-[56px] cursor-pointer w-[351px] min-[481px]:w-[440px] min-[700px]:w-[660px] md:w-[200px] shadow-[0px_-1px_6px_0px_rgba(0,0,0,.1)] md:shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] rounded-t-2xl md:rounded-bl-2xl md:rounded-tr-none md:border-b-0 md:border-r-[1px]'>
-                  <span className='font-["Mulish"] pl-6 text-sm text-[#333333] font-extrabold'>Location</span>
-                  <div className='text-[#BDBDBD] font-["Mulish"] pl-6 pb-1'>Select Location</div>
+                <div onClick={() => setList(<Locations />)} className='border-b-[1px] h-[56px] cursor-pointer w-[351px] min-[481px]:w-[440px] min-[700px]:w-[660px] md:w-[200px] lg:w-[300px] xl:w-[420px] shadow-[0px_-1px_6px_0px_rgba(0,0,0,.1)] md:shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] rounded-t-2xl md:rounded-bl-2xl md:rounded-tr-none md:border-b-0 md:border-r-[1px] duration-500 group hover:bg-[#EB5757E5]'>
+                  <span className='font-["Mulish"] pl-6 text-sm text-[#333333] group-hover:text-white font-extrabold'>Location</span>
+                  <div className='text-[#BDBDBD] group-hover:text-white font-["Mulish"] pl-6 pb-1'>Select Location</div>
                 </div>
 
                 {/* Guests Input */}
-                <div onClick={() => setList(<Guests />)} className='h-[56px] cursor-pointer w-[351px] min-[481px]:w-[440px] min-[700px]:w-[660px] md:w-[200px] shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] rounded-b-2xl md:rounded-bl-none md:rounded-br-none'>
-                  <span className='font-["Mulish"] text-sm pl-6 text-[#333333] font-extrabold'>Guests</span>
-                  <div className='text-[#BDBDBD] font-["Mulish"] pl-6 pb-1'>Add Guests</div>
+                <div onClick={() => setList(<Guests />)} className='h-[56px] cursor-pointer w-[351px] min-[481px]:w-[440px] min-[700px]:w-[660px] md:w-[200px] lg:w-[300px] xl:w-[420px] shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] rounded-b-2xl md:rounded-bl-none md:rounded-br-none duration-500 group hover:bg-[#EB5757E5]'>
+                  <span className='font-["Mulish"] text-sm pl-6 text-[#333333] group-hover:text-white font-extrabold'>Guests</span>
+                  <div className='text-[#BDBDBD] font-["Mulish"] group-hover:text-white pl-6 pb-1'>Add Guests</div>
                 </div>
 
-                <div className='hidden md:block w-[200px] h-[56px] shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] border-l-[1px]'>
+                <div className='hidden md:block w-[200px] xl:w-[420px] h-[56px] shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] border-l-[1px] rounded-r-2xl'>
                   <button className='flex font-medium justify-center mx-auto rounded-2xl gap-1 mb-6 text-white bg-[#EB5757E5] items-center w-[126px] hover:opacity-70 duration-500 h-[56px]'><AiOutlineSearch className='text-xl'/> Search</button>
                 </div>
               </div>
