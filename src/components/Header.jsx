@@ -18,16 +18,16 @@ const Header = () => {
       <a className='self-start lg:self-center' href='/'>
         <img src={Logo} alt='logo'/>
       </a>
-      <div onClick={handleMenu} className='flex shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] rounded-2xl justify-center items-center h-[55px] w-[297px] min-[481px]:w-[460px] md:w-[680px] lg:w-[297px]'>
-        <div className='w-[138px] min-[481px]:w-[200px] md:w-[280px] lg:w-[138px] text-[#BDBDBD] font-["Mulish"] text-sm text-center'>Location</div>
-        <div className='w-[106px] min-[481px]:w-[200px] md:w-[280px] lg:w-[106px] text-[#BDBDBD] font-["Mulish"] text-sm h-full flex justify-center items-center border-x-[1px]'>Add guests</div>
-        <div className='w-[53px] min-[481px]:w-[60px] md:w-[120px] lg:w-[53px] flex justify-center items-center text-[#EB5757E5] text-xl'>
+      <div onClick={handleMenu} className='flex shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] rounded-2xl justify-center items-center h-[55px] w-[297px] min-[481px]:w-[460px] md:w-[680px] lg:w-[297px] xl:w-[400px] cursor-pointer'>
+        <div className='w-[138px] min-[481px]:w-[200px] md:w-[280px] lg:w-[138px] xl:w-[200px] text-[#BDBDBD] font-["Mulish"] text-sm text-center'>Location</div>
+        <div className='w-[106px] min-[481px]:w-[200px] md:w-[280px] lg:w-[106px] xl:w-[140px] text-[#BDBDBD] font-["Mulish"] text-sm h-full flex justify-center items-center border-x-[1px]'>Add guests</div>
+        <div className='w-[53px] min-[481px]:w-[60px] md:w-[120px] lg:w-[53px] xl:w-[60px] flex justify-center items-center text-[#EB5757E5] text-xl'>
           <AiOutlineSearch />
         </div>
       </div>
 
       {/* Search menu background */}
-      <div className={menu ? 'absolute bottom-0 left-0 w-full h-[20vh] md:h-[50vh] bg-black/60' : 'absolute hidden bottom-0 left-0 w-full h-[20vh] bg-black/60'}></div>
+      <div onClick={handleMenu} className={menu ? 'absolute bottom-0 left-0 w-full h-[20vh] md:h-[50vh] bg-black/60' : 'absolute hidden bottom-0 left-0 w-full h-[20vh] bg-black/60'}></div>
       
       {/* Search menu */}
       <div className={menu ? 'absolute top-0 left-0 w-full h-[80vh] md:h-[50vh] bg-white shadow-md' : 'absolute top-[-100%] duration-500 left-0 w-full h-[80vh] bg-white shadow-md'}>
