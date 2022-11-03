@@ -8,31 +8,23 @@ const Guests = () => {
 
   
   const PlusAdultCount = () => {
-    if (adults >= 0) {
-      setAdults(adults + 1);
-    };
+    (adults >= 0) ? setAdults(adults + 1) : null
   };
 
   const MinusAdultCount = () => {
-    if (adults > 0) {
-      setAdults(adults - 1);
-    };
+    (adults > 0) ? setAdults(adults - 1) : null
   };
 
   const PlusChildrenCount = () => {
-    if (children >= 0) {
-      setChildren(children + 1);
-    };
+    (children >= 0) ? setChildren(children + 1) : null
   };
 
   const MinusChildrenCount = () => {
-    if (children > 0) {
-      setChildren(children - 1);
-    };
+    (children > 0) ? setChildren(children - 1) : null
   };
 
   return (
-    <div className='px-6 py-9 font-["Mulish"]'>
+    <div className='px-6 py-9 font-["Mulish"] md:px-56'>
 
       {/* Adults */}
       <div className='mb-[3.25rem]'>
