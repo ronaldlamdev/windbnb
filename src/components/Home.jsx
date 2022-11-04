@@ -8,7 +8,7 @@ const Home = () => {
         <h1 className='text-lg text-[#333] font-bold'>Stays in Finland</h1>
         <span className='font-medium text-[#4F4F4F]'>12+ stays</span>
       </div>
-      <div>
+      <div className='py-5'>
         <Card />
       </div>
     </main>
