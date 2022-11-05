@@ -14,7 +14,7 @@ const Header = () => {
   };
 
   return (
-    <header className='flex flex-col items-center gap-5 lg:justify-between lg:flex-row lg:px-24'>
+    <header className='flex flex-col items-center gap-5 px-3 lg:justify-between lg:flex-row lg:px-24 xl:px-22 2xl:px-32 min-[1600px]:px-44'>
       <a className='self-start lg:self-center' href='/'>
         <img src={Logo} alt='logo'/>
       </a>

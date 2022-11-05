@@ -4,7 +4,7 @@ import Home from './components/Home'
 
 const App = () => {
   return (
-    <div className='px-3 py-5'>
+    <div className='py-5'>
       <Header />
       <Home />
     </div>
