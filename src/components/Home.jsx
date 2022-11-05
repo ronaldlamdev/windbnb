@@ -1,7 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Card from './Card'
+import Data from '../assets/data/stays.json';
 
 const Home = () => {
+
+  const [rooms, setRooms] = useState(Data);
+
   return (
     <main className='mt-9'>
       <div className='w-full flex justify-between items-center'>
@@ -9,7 +13,15 @@ const Home = () => {
         <span className='font-medium text-[#4F4F4F]'>12+ stays</span>
       </div>
       <div className='py-5'>
-        <Card />
+        {rooms.map((room, index) => (
+          <Card key={index} 
+          title={room.title}
+          photo={room.photo}
+          type={room.type}
+          beds={room.beds}
+          rating={room.rating}
+    />
+        ))}
       </div>
     </main>
   )
