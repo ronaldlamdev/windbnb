@@ -3,7 +3,7 @@ import {AiFillStar} from 'react-icons/ai';
 
 const Card = ({title, photo, superHost, type, beds, rating}) => {
   return (
-    <div className='flex flex-col items-center text-center mx-auto w-full max-w-[457px] lg:max-w-[500px]'>
+    <div className='flex flex-col items-center text-center mx-auto w-full max-w-[457px] lg:max-w-[500px] cursor-pointer'>
       <div className='w-full h-[240px] lg:h-[300px]'>
         <img className='w-full h-full rounded-3xl' src={photo} alt={title} />
       </div>

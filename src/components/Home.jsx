@@ -12,7 +12,7 @@ const Home = () => {
         <h1 className='text-lg text-[#333] font-bold'>Stays in Finland</h1>
         <span className='font-medium text-[#4F4F4F]'>12+ stays</span>
       </div>
-      <div className='py-5 grid grid-cols-1 sm:grid-cols-2 sm:gap-3 lg:grid-cols-3 lg:px-24 cursor-pointer'>
+      <div className='py-5 grid grid-cols-1 sm:grid-cols-2 sm:gap-3 lg:grid-cols-3 lg:px-24'>
         {rooms.map((room, index) => (
           <Card key={index} 
           title={room.title}
