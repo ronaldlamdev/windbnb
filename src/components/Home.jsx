@@ -20,6 +20,7 @@ const Home = () => {
           type={room.type}
           beds={room.beds}
           rating={room.rating}
+          superHost={(room.superHost === true) ? <span className='px-2 py-[6px] border text-[.75rem] font-bold border-[#4F4F4F] rounded-2xl'>Super Host</span> : null}
     />
         ))}
       </div>
