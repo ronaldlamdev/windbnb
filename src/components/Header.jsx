@@ -11,8 +11,9 @@ const Header = () => {
   const [menu, setMenu] = useState(false);
   const [list, setList] = useState(<Locations />);
 
-  const onSubmit = () => {
-    setMenu(false);
+  const locationInput = () => {
+    const locationSelect = document.getElementById('location');
+    
   }
 
   const handleMenu = () => {
@@ -54,13 +55,13 @@ const Header = () => {
                 {/* Location Input */}
                 <div onClick={() => setList(<Locations />)} className='border-b-[1px] h-[56px] cursor-pointer w-[351px] min-[481px]:w-[440px] min-[700px]:w-[660px] md:w-[200px] lg:w-[300px] xl:w-[420px] shadow-[0px_-1px_6px_0px_rgba(0,0,0,.1)] md:shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] rounded-t-2xl md:rounded-bl-2xl md:rounded-tr-none md:border-b-0 md:border-r-[1px] duration-500 group hover:bg-[#EB5757E5]'>
                   <span className='font-["Mulish"] pl-6 text-sm text-[#333333] group-hover:text-white font-extrabold'>Location</span>
-                  <div className='text-[#BDBDBD] group-hover:text-white font-["Mulish"] pl-6 pb-1'>Select Location</div>
+                  <div id='location' className='text-[#BDBDBD] group-hover:text-white font-["Mulish"] pl-6 pb-1'>Select Location</div>
                 </div>
 
                 {/* Guests Input */}
                 <div onClick={() => setList(<Guests />)} className='h-[56px] cursor-pointer w-[351px] min-[481px]:w-[440px] min-[700px]:w-[660px] md:w-[200px] lg:w-[300px] xl:w-[420px] shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] rounded-b-2xl md:rounded-bl-none md:rounded-br-none duration-500 group hover:bg-[#EB5757E5]'>
                   <span className='font-["Mulish"] text-sm pl-6 text-[#333333] group-hover:text-white font-extrabold'>Guests</span>
-                  <div className='text-[#BDBDBD] font-["Mulish"] group-hover:text-white pl-6 pb-1'>Add Guests</div>
+                  <div id='guests' className='text-[#BDBDBD] font-["Mulish"] group-hover:text-white pl-6 pb-1'>Add Guests</div>
                 </div>
 
                 <div className='hidden md:block w-[200px] xl:w-[420px] h-[56px] shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] border-l-[1px] rounded-r-2xl'>
