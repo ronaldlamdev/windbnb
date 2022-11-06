@@ -1,20 +1,26 @@
-import React, {useState} from 'react'
+import React, {useContext, useState} from 'react'
 import Logo from '../assets/images/logo.svg'
 import {AiOutlineSearch, AiOutlineClose} from 'react-icons/ai'
 import Locations from './Locations'
 import Guests from './Guests'
+import DataContext from '../context/DataContext'
 
 const Header = () => {
 
+  const {rooms, setRooms} = useContext(DataContext);
   const [menu, setMenu] = useState(false);
   const [list, setList] = useState(<Locations />);
+
+  const onSubmit = () => {
+    setMenu(false);
+  }
 
   const handleMenu = () => {
     setMenu(!menu);
   };
 
   return (
-    <header className='flex flex-col items-center gap-5 px-3 lg:justify-between lg:flex-row lg:px-24 xl:px-22 2xl:px-32 min-[1600px]:px-44'>
+    <header className='flex flex-col items-center gap-5 px-3 pt-5 lg:justify-between lg:flex-row lg:px-24 xl:px-22 2xl:px-32 min-[1600px]:px-44'>
       <a className='self-start lg:self-center' href='/'>
         <img className='lg:w-32' src={Logo} alt='logo'/>
       </a>

@@ -1,10 +1,10 @@
-import React, {useState} from 'react'
+import React, {useContext, useState} from 'react'
 import Card from './Card'
-import Data from '../assets/data/stays.json';
+import DataContext from '../context/DataContext';
 
 const Home = () => {
 
-  const [rooms, setRooms] = useState(Data);
+  const {rooms} = useContext(DataContext)
 
   return (
     <main className='mt-9 px-3'>
