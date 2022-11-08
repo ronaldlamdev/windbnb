@@ -75,7 +75,7 @@ const Header = () => {
             </div>
 
             {/* Search button */}
-            <button className='flex md:hidden font-medium justify-center rounded-2xl gap-1 mb-6 text-white self-center bg-[#EB5757E5] items-center w-[126px] hover:opacity-70 duration-500 h-12'><AiOutlineSearch className='text-xl'/> Search</button>
+            <button onClick={handleSubmit} className='flex md:hidden font-medium justify-center rounded-2xl gap-1 mb-6 text-white self-center bg-[#EB5757E5] items-center w-[126px] hover:opacity-70 duration-500 h-12'><AiOutlineSearch className='text-xl'/> Search</button>
           </div>
 
         </div>
