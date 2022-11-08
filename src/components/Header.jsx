@@ -1,15 +1,17 @@
-import React, {useContext, useState} from 'react'
-import Logo from '../assets/images/logo.svg'
-import {AiOutlineSearch, AiOutlineClose} from 'react-icons/ai'
-import Locations from './Locations'
-import Guests from './Guests'
-import DataContext from '../context/DataContext'
-import LocationContext from '../context/LocationContext'
+import React, {useContext, useState} from 'react';
+import Logo from '../assets/images/logo.svg';
+import {AiOutlineSearch, AiOutlineClose} from 'react-icons/ai';
+import Locations from './Locations';
+import Guests from './Guests';
+import DataContext from '../context/DataContext';
+import LocationContext from '../context/LocationContext';
+import GuestsContext from '../context/Guests';
 
 const Header = () => {
 
   const {rooms, setRooms} = useContext(DataContext);
   const {location} = useContext(LocationContext);
+  const {guests} = useContext(GuestsContext);
   const [menu, setMenu] = useState(false);
   const [list, setList] = useState(<Locations />);
 

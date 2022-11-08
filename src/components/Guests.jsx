@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-import {FiPlusSquare, FiMinusSquare} from 'react-icons/fi'
+import React, {useState} from 'react';
+import {FiPlusSquare, FiMinusSquare} from 'react-icons/fi';
 
 const Guests = () => {
 

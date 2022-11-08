@@ -1,6 +1,6 @@
-import React, { useContext } from 'react'
-import {MdLocationPin} from 'react-icons/md'
-import LocationContext from '../context/LocationContext'
+import React, { useContext } from 'react';
+import {MdLocationPin} from 'react-icons/md';
+import LocationContext from '../context/LocationContext';
 
 const Locations = () => {
 
