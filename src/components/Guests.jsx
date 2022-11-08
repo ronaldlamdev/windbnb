@@ -1,26 +1,28 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 import {FiPlusSquare, FiMinusSquare} from 'react-icons/fi';
+import GuestsContext from '../context/GuestsContext';
 
 const Guests = () => {
 
   const [adults, setAdults] = useState(0);
   const [children, setChildren] = useState(0);
+  const {setGuests} = useContext(GuestsContext)
 
   
   const PlusAdultCount = () => {
-    (adults >= 0) ? setAdults(adults + 1) : null
+    (adults >= 0) ? (setAdults(adults + 1), setGuests(adults + children)) : null
   };
 
   const MinusAdultCount = () => {
-    (adults > 0) ? setAdults(adults - 1) : null
+    (adults > 0) ? (setAdults(adults - 1), setGuests(adults + children)) : null
   };
 
   const PlusChildrenCount = () => {
-    (children >= 0) ? setChildren(children + 1) : null
+    (children >= 0) ? (setChildren(children + 1), setGuests(adults + children)) : null
   };
 
   const MinusChildrenCount = () => {
-    (children > 0) ? setChildren(children - 1) : null
+    (children > 0) ? (setChildren(children - 1), setGuests(adults + children)) : null
   };
 
   return (
