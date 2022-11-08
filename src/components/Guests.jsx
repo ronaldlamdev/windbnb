@@ -1,4 +1,4 @@
-import React, {useState, useContext} from 'react';
+import React, {useState, useContext, useEffect} from 'react';
 import {FiPlusSquare, FiMinusSquare} from 'react-icons/fi';
 import GuestsContext from '../context/GuestsContext';
 
@@ -10,20 +10,24 @@ const Guests = () => {
 
   
   const PlusAdultCount = () => {
-    (adults >= 0) ? (setAdults(adults + 1), setGuests(adults + children)) : null
+    (adults >= 0) ? setAdults(adults + 1) : null
   };
 
   const MinusAdultCount = () => {
-    (adults > 0) ? (setAdults(adults - 1), setGuests(adults + children)) : null
+    (adults > 0) ? setAdults(adults - 1) : null
   };
 
   const PlusChildrenCount = () => {
-    (children >= 0) ? (setChildren(children + 1), setGuests(adults + children)) : null
+    (children >= 0) ? setChildren(children + 1) : null
   };
 
   const MinusChildrenCount = () => {
-    (children > 0) ? (setChildren(children - 1), setGuests(adults + children)) : null
+    (children > 0) ? setChildren(children - 1) : null
   };
+
+  useEffect(() => {
+    setGuests(adults + children)
+  })
 
   return (
     <div className='px-6 py-9 font-["Mulish"] md:px-56 lg:px-80 xl:px-[27.5rem]'>
