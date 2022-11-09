@@ -143,3 +143,21 @@ body {
 .number-button-changer {
   @apply w-6 h-6 hover:text-[#EB5757E5] duration-500
 }
+
+/* Card component custom classes */
+.card-container {
+  @apply flex flex-col items-center text-center mx-auto w-full max-w-[457px] 
+  lg:max-w-[500px] cursor-pointer
+}
+
+.card-container-headings {
+  @apply mt-3 w-full flex justify-between items-center mx-auto
+}
+
+.card-container-traits {
+  @apply font-medium text-[#828282] text-sm lg:text-base
+}
+
+.card-title {
+  @apply mt-1 lg:mt-2 lg:text-lg mb-5 text-[#333] font-semibold self-start
+}
