@@ -135,4 +135,11 @@ body {
   @apply flex w-fit items-center cursor-pointer text-[#4F4F4F] font-medium hover:text-[#828282] hover:underline hover:underline-offset-2 duration-500
 }
 
+/* Guest component custom classes */
+.guests-container {
+  @apply px-6 py-9 font-["Mulish"] md:px-56 lg:px-80 xl:px-[27.5rem]
+}
 
+.number-button-changer {
+  @apply w-6 h-6 hover:text-[#EB5757E5] duration-500
+}
