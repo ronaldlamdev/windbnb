@@ -114,4 +114,15 @@ body {
   duration-500 h-12
 }
 
+/* Custom classes for Home Component */
+
+.home-headings-container {
+  @apply w-full flex justify-between items-center lg:px-24 xl:px-26 
+  2xl:px-28 min-[1600px]:px-40
+}
+
+.grid-section {
+  @apply py-5 grid grid-cols-1 sm:grid-cols-2 sm:gap-3 lg:grid-cols-3 lg:px-24
+}
+
 
