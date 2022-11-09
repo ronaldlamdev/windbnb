@@ -117,12 +117,17 @@ body {
 /* Custom classes for Home Component */
 
 .home-headings-container {
-  @apply w-full flex justify-between items-center lg:px-24 xl:px-26 
+  @apply w-full flex justify-between items-center lg:px-24 xl:px-[6.5rem] 
   2xl:px-28 min-[1600px]:px-40
 }
 
 .grid-section {
   @apply py-5 grid grid-cols-1 sm:grid-cols-2 sm:gap-3 lg:grid-cols-3 lg:px-24
+}
+
+.superhost {
+  @apply px-2 py-[6px] border text-[.75rem] font-bold border-[#4F4F4F] 
+  rounded-2xl lg:text-base
 }
 
 
