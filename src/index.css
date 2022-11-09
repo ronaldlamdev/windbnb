@@ -130,4 +130,9 @@ body {
   rounded-2xl lg:text-base
 }
 
+/* Location component custom classes */
+.location-option {
+  @apply flex w-fit items-center cursor-pointer text-[#4F4F4F] font-medium hover:text-[#828282] hover:underline hover:underline-offset-2 duration-500
+}
+
 
