@@ -10,3 +10,108 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
+/* Custom classes for header component */
+.header {
+  @apply flex flex-col items-center gap-5 
+  px-3 pt-5 lg:justify-between lg:flex-row 
+  lg:px-24 xl:px-[6.5rem] 2xl:px-32 min-[1600px]:px-44
+}
+
+.header-inputs-container {
+  @apply flex shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] 
+  rounded-2xl justify-center items-center h-[55px] 
+  w-[297px] min-[481px]:w-[460px] md:w-[680px] 
+  lg:w-[297px] xl:w-[400px] cursor-pointer
+}
+
+.header-location-input {
+  @apply w-[138px] min-[481px]:w-[200px] md:w-[280px] 
+  lg:w-[138px] xl:w-[200px] text-[#BDBDBD] lg:text-[1.1rem] 
+  font-["Mulish"] text-sm text-center
+}
+
+.header-guests-input {
+  @apply w-[106px] min-[481px]:w-[200px] md:w-[280px] 
+  lg:w-[106px] xl:w-[140px] text-[#BDBDBD] lg:text-[1.1rem] 
+  font-["Mulish"] text-sm h-full flex justify-center 
+  items-center border-x-[1px]
+}
+
+.header-search-button {
+  @apply w-[53px] min-[481px]:w-[60px] md:w-[120px] 
+  lg:w-[53px] xl:w-[60px] flex justify-center items-center 
+  text-[#EB5757E5] text-xl lg:text-2xl
+}
+
+/* Search menu custom classes */
+.search-menu-bg-active {
+  @apply absolute bottom-0 left-0 w-full h-[20vh] md:h-[200vh] bg-black/60
+}
+
+.search-menu-bg-hidden {
+  @apply absolute hidden bottom-0 left-0 w-full h-[20vh] bg-black/60
+}
+
+.search-menu-close {
+  @apply text-[#333333] text-xl hover:opacity-70 duration-500 cursor-pointer
+}
+
+.search-menu-active {
+  @apply absolute top-0 left-0 w-full h-[80vh] md:h-[50vh] bg-white shadow-md
+}
+
+.search-menu-hidden {
+  @apply absolute top-[-100%] duration-500 left-0 w-full h-[80vh] bg-white shadow-md
+}
+
+.search-menu-location-input-container {
+  @apply border-b-[1px] h-[56px] cursor-pointer w-[351px] min-[481px]:w-[440px] 
+  min-[700px]:w-[660px] md:w-[200px] lg:w-[300px] xl:w-[420px] 
+  shadow-[0px_-1px_6px_0px_rgba(0,0,0,.1)] md:shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] 
+  rounded-t-2xl md:rounded-bl-2xl md:rounded-tr-none md:border-b-0 md:border-r-[1px] 
+  duration-500 hover:bg-[#EB5757E5]
+}
+
+.search-menu-location-input-heading {
+  @apply font-["Mulish"] pl-6 text-sm text-[#333333]
+  group-hover:text-white font-extrabold
+}
+
+.search-menu-location-input-selection {
+  @apply text-[#BDBDBD] group-hover:text-white font-["Mulish"] pl-6 pb-1
+}
+
+.search-menu-guests-input-container {
+  @apply h-[56px] cursor-pointer w-[351px] min-[481px]:w-[440px] min-[700px]:w-[660px] 
+  md:w-[200px] lg:w-[300px] xl:w-[420px] shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] 
+  rounded-b-2xl md:rounded-bl-none md:rounded-br-none duration-500 hover:bg-[#EB5757E5]
+}
+
+.search-menu-guests-input-heading {
+  @apply font-["Mulish"] text-sm pl-6 text-[#333333] 
+  group-hover:text-white font-extrabold
+}
+
+.search-menu-guests-input-selection {
+  @apply text-[#BDBDBD] font-["Mulish"] group-hover:text-white pl-6 pb-1
+}
+
+.search-menu-search-button-container {
+  @apply hidden md:block w-[200px] xl:w-[420px] h-[56px] 
+  shadow-[0px_1px_6px_0px_rgba(0,0,0,.1)] border-l-[1px] rounded-r-2xl
+}
+
+.search-menu-search-button {
+  @apply flex font-medium justify-center mx-auto rounded-2xl gap-1 mb-6 
+  text-white bg-[#EB5757E5] items-center w-[126px] hover:opacity-70 
+  duration-500 h-[56px]
+}
+
+.search-menu-search-button-mobile {
+  @apply flex md:hidden font-medium justify-center rounded-2xl gap-1 mb-6 
+  text-white self-center bg-[#EB5757E5] items-center w-[126px] hover:opacity-70 
+  duration-500 h-12
+}
+
+

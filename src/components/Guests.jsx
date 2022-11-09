@@ -27,7 +27,7 @@ const Guests = () => {
 
   useEffect(() => {
     setGuests(adults + children)
-  })
+  }, [adults, children])
 
   return (
     <div className='px-6 py-9 font-["Mulish"] md:px-56 lg:px-80 xl:px-[27.5rem]'>
