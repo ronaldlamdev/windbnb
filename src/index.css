@@ -34,7 +34,7 @@ body {
 .header-location-input-selected {
   @apply w-[138px] min-[481px]:w-[200px] md:w-[280px] 
   lg:w-[138px] xl:w-[200px] text-[#333] lg:text-[1.1rem] 
-  font-["Mulish"] text-sm text-center font-medium
+  font-["Mulish"] text-sm text-center font-semibold
 }
 
 .header-guests-input {
@@ -42,6 +42,13 @@ body {
   lg:w-[106px] xl:w-[140px] text-[#BDBDBD] lg:text-[1.1rem] 
   font-["Mulish"] text-sm h-full flex justify-center 
   items-center border-x-[1px]
+}
+
+.header-guests-input-selected {
+  @apply w-[106px] min-[481px]:w-[200px] md:w-[280px] 
+  lg:w-[106px] xl:w-[140px] text-[#333] lg:text-[1.1rem] 
+  font-["Mulish"] text-sm h-full flex justify-center 
+  items-center border-x-[1px] font-semibold
 }
 
 .header-search-button {
@@ -89,7 +96,7 @@ body {
 }
 
 .search-menu-location-input-selected {
-  @apply text-[#333] font-medium group-hover:text-white font-["Mulish"] pl-6 pb-1
+  @apply text-[#333] font-semibold group-hover:text-white font-["Mulish"] pl-6 pb-1
 }
 
 .search-menu-guests-input-container {
@@ -105,6 +112,10 @@ body {
 
 .search-menu-guests-input-selection {
   @apply text-[#BDBDBD] font-["Mulish"] group-hover:text-white pl-6 pb-1
+}
+
+.search-menu-guests-input-selected {
+  @apply text-[#333] font-semibold font-["Mulish"] group-hover:text-white pl-6 pb-1
 }
 
 .search-menu-search-button-container {

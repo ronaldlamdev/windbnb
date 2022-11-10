@@ -30,7 +30,7 @@ const Header = () => {
       </a>
       <div onClick={handleMenu} className='header-inputs-container'>
         <div className={(location === "Select Location") ? 'header-location-input' : 'header-location-input-selected'}>{location}</div>
-        <div className='header-guests-input'>{guests}</div>
+        <div className={(guests === "Add guests") ? 'header-guests-input' : 'header-guests-input-selected'}>{guests}</div>
         <div className='header-search-button'>
           <AiOutlineSearch />
         </div>
@@ -64,7 +64,7 @@ const Header = () => {
                 {/* Guests Input */}
                 <div onClick={() => setList(<Guests />)} className='search-menu-guests-input-container group'>
                   <span className='search-menu-guests-input-heading'>Guests</span>
-                  <div className='search-menu-guests-input-selection'>{guests}</div>
+                  <div className={(guests === "Add guests") ? 'search-menu-guests-input-selection' : 'search-menu-guests-input-selected'}>{guests}</div>
                 </div>
 
                 <div className='search-menu-search-button-container'>
