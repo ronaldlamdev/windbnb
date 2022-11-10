@@ -29,7 +29,7 @@ const Header = () => {
         <img className='lg:w-32' src={Logo} alt='logo'/>
       </a>
       <div onClick={handleMenu} className='header-inputs-container'>
-        <div className='header-location-input'>{location}</div>
+        <div className={(location === "Select Location") ? 'header-location-input' : 'header-location-input-selected'}>{location}</div>
         <div className='header-guests-input'>{guests}</div>
         <div className='header-search-button'>
           <AiOutlineSearch />
@@ -58,7 +58,7 @@ const Header = () => {
                 {/* Location Input */}
                 <div onClick={() => setList(<Locations />)} className='search-menu-location-input-container group'>
                   <span className='search-menu-location-input-heading'>Location</span>
-                  <div className='search-menu-location-input-selection'>{location}</div>
+                  <div className={(location === "Select location") ? 'search-menu-location-input-selection' : 'search-menu-location-input-selected'}>{location}</div>
                 </div>
 
                 {/* Guests Input */}
