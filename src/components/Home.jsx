@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext} from 'react';
 import Card from './Card';
 import DataContext from '../context/DataContext';
 
@@ -10,7 +10,7 @@ const Home = () => {
     <main className='mt-9 px-3'>
       <div className='home-headings-container'>
         <h1 className='text-lg text-[#333] font-bold'>Stays in Finland</h1>
-        <span className='font-medium text-[#4F4F4F] lg:text-lg'>12+ stays</span>
+        <span className='font-medium text-[#4F4F4F] lg:text-lg'></span>
       </div>
       <div className='grid-section'>
         {rooms.map((room, index) => (

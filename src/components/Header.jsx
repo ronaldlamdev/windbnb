@@ -19,9 +19,9 @@ const Header = () => {
   const handleSubmit = (location, guests) => {
     setRooms(
       Data.filter((room) => {
-        return room.city === location || room.maxGuests === guests
+        return location === room.city || guests === room.maxGuests
       })
-    )
+    );
     setMenu(!menu);
   }
 
