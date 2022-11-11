@@ -35,7 +35,8 @@ const Header = () => {
         <img className='lg:w-32' src={Logo} alt='logo'/>
       </a>
       <div onClick={handleMenu} className='header-inputs-container'>
-        <div className={(location === "Select Location") ? 'header-location-input' : 'header-location-input-selected'}>{location}</div>
+        <div className={(location === "Select Location") ? 'header-location-input' : 'header-location-input-selected'}>{location} 
+        {(location === "Helsinki" || location === "Turku" || location === "Vaasa" || location === "Oulu") ? ", Finland" : null }</div>
         <div className={(guests === "Add guests") ? 'header-guests-input' : 'header-guests-input-selected'}>{guests}</div>
         <div className='header-search-button'>
           <AiOutlineSearch />
@@ -64,7 +65,8 @@ const Header = () => {
                 {/* Location Input */}
                 <div onClick={() => setList(<Locations />)} className='search-menu-location-input-container group'>
                   <span className='search-menu-location-input-heading'>Location</span>
-                  <div className={(location === "Select location") ? 'search-menu-location-input-selection' : 'search-menu-location-input-selected'}>{location}</div>
+                  <div className={(location === "Select location") ? 'search-menu-location-input-selection' : 'search-menu-location-input-selected'}>{location} 
+                  {(location === "Helsinki" || location === "Turku" || location === "Vaasa" || location === "Oulu") ? ", Finland" : null }</div>
                 </div>
 
                 {/* Guests Input */}
