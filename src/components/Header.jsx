@@ -6,7 +6,7 @@ import Guests from './Guests';
 import DataContext from '../context/DataContext';
 import LocationContext from '../context/LocationContext';
 import GuestsContext from '../context/GuestsContext';
-import Data from '../assets/data/stays.json';
+import { stays } from '../assets/data/Rooms';
 
 const Header = () => {
 
