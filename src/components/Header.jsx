@@ -6,19 +6,18 @@ import Guests from './Guests';
 import DataContext from '../context/DataContext';
 import LocationContext from '../context/LocationContext';
 import GuestsContext from '../context/GuestsContext';
-import { stays } from '../assets/data/Rooms';
 
 const Header = () => {
 
-  const {setRooms} = useContext(DataContext);
+  const {stays, setStays} = useContext(DataContext);
   const {location} = useContext(LocationContext);
   const {guests} = useContext(GuestsContext);
   const [menu, setMenu] = useState(false);
   const [list, setList] = useState(<Locations />);
 
   const handleSubmit = (location, guests) => {
-    setRooms(
-      Data.filter((room) => {
+    setStays(
+      stays.filter((room) => {
         return location === room.city || guests === room.maxGuests
       })
     );
