@@ -1,14 +1,14 @@
 import React, { useContext } from 'react';
 import {MdLocationPin} from 'react-icons/md';
 import LocationContext from '../context/LocationContext';
-import Data from '../assets/data/stays.json';
+import {data} from '../assets/data/stays.js'
 const Locations = () => {
 
   const {setLocation} = useContext(LocationContext);
-  const Helsinki = Data[0].city
-  const Turku = Data[1].city
-  const Vaasa = Data[5].city
-  const Oulu = Data[7].city
+  const Helsinki = data[0].city
+  const Turku = data[1].city
+  const Vaasa = data[5].city
+  const Oulu = data[7].city
 
   return (
     <ul className='px-6 py-9'>
