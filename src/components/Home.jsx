@@ -26,7 +26,9 @@ const Home = () => {
         ))}
       </div>
       :
-      <div>No Stays Available</div>
+      <div className='flex justify-center items-center h-[50vh]'>
+        <h1 className='text-xl lg:text-2xl'>No Stays Available</h1>
+      </div>
       }
       
     </main>

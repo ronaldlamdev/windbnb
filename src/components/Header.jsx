@@ -6,10 +6,11 @@ import Guests from './Guests';
 import DataContext from '../context/DataContext';
 import LocationContext from '../context/LocationContext';
 import GuestsContext from '../context/GuestsContext';
+import { data } from '../assets/data/stays';
 
 const Header = () => {
 
-  const {stays, setStays} = useContext(DataContext);
+  const {setStays} = useContext(DataContext);
   const {location} = useContext(LocationContext);
   const {guests} = useContext(GuestsContext);
   const [menu, setMenu] = useState(false);
@@ -17,10 +18,10 @@ const Header = () => {
 
   const handleSubmit = (location, guests) => {
     setStays(
-      stays.filter((room) => {
-        return location === room.city || guests === room.maxGuests
+      data.filter((stay) => {
+        return stay.city === location || stay.maxGuests <= guests
       })
-    );
+    )
     setMenu(!menu);
   }
 
