@@ -16,10 +16,10 @@ const Header = () => {
   const [menu, setMenu] = useState(false);
   const [list, setList] = useState(<Locations />);
 
-  const handleSubmit = (location, guests) => {
+  const handleSubmit = () => {
     setStays(
       data.filter((stay) => {
-        return stay.city === location || stay.maxGuests <= guests
+        return stay.city === location && stay.maxGuests <= guests
       })
     )
     setMenu(!menu);
