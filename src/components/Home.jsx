@@ -10,7 +10,7 @@ const Home = () => {
     <main className='mt-9 px-3'>
       <div className='home-headings-container'>
         <h1 className='text-lg text-[#333] font-bold'>Stays in Finland</h1>
-        <span className='font-medium text-[#4F4F4F] lg:text-lg'>{(stays.length >= 0) ? `${stays.length}` + ' stays' : null}</span>
+        <span className='font-medium text-[#4F4F4F] lg:text-lg'>{stays.length} stays</span>
       </div>
       {(stays.length > 0) ? 
         <div className='grid-section'>

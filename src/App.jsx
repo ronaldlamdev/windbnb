@@ -4,7 +4,7 @@ import Home from './components/Home';
 import DataContext from './context/DataContext';
 import LocationContext from './context/LocationContext';
 import GuestsContext from './context/GuestsContext';
-import { data } from './assets/data/Rooms';
+import { data } from './assets/data/stays.js';
 
 const App = () => {
 
